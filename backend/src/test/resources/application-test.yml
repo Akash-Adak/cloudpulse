@@ -20,3 +20,8 @@ cloudpulse:
     allow-private-targets: true   # lets tests register 127.0.0.1 without DNS; metadata IPs stay blocked
   scheduler:
     enabled: false
+
+management:
+  health:
+    mail:
+      enabled: false
