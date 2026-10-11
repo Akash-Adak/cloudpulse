@@ -132,3 +132,9 @@ WARNING: Unmatched cancel notification for request id 10
 Oct 11, 2026 6:35:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
 WARNING: Unmatched cancel notification for request id 14
 2026.10.11 18:35:29 INFO  no build target found for D:\cloudpulse\cloudpulse\backend\src\main\java\com\cloudpulse\CloudPulseApplication.java. Using fallback presentation compiler.
+2026.10.11 18:38:07 INFO  no build target found for D:\cloudpulse\cloudpulse\backend\src\main\java\com\cloudpulse\CloudPulseApplication.java. Using fallback presentation compiler.
+2026.10.11 18:38:12 INFO  no build target found for D:\cloudpulse\cloudpulse\backend\src\main\java\com\cloudpulse\CloudPulseApplication.java. Using fallback presentation compiler.
+2026.10.11 18:38:12 INFO  no build target found for D:\cloudpulse\cloudpulse\backend\src\main\java\com\cloudpulse\CloudPulseApplication.java. Using fallback presentation compiler.
+2026.10.11 18:38:12 INFO  no build target found for D:\cloudpulse\cloudpulse\backend\src\main\java\com\cloudpulse\CloudPulseApplication.java. Using fallback presentation compiler.
+2026.10.11 18:38:12 INFO  no build target found for D:\cloudpulse\cloudpulse\backend\src\main\java\com\cloudpulse\CloudPulseApplication.java. Using fallback presentation compiler.
+2026.10.11 18:39:23 INFO  no build target found for D:\cloudpulse\cloudpulse\backend\src\main\java\com\cloudpulse\CloudPulseApplication.java. Using fallback presentation compiler.
