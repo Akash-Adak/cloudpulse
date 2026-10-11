@@ -1,0 +1,5 @@
+# Automatic HTTPS (Let's Encrypt) in front of the backend.
+# API_DOMAIN must resolve to the EC2 public IP, e.g. api.example.com or <ip-with-dashes>.sslip.io
+{$API_DOMAIN} {
+	reverse_proxy backend:8080
+}

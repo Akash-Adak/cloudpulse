@@ -1,0 +1,36 @@
+# Production override for a single EC2 instance.
+# Run:  docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d --build mysql backend caddy
+# (the React frontend is hosted separately, e.g. on Vercel, so "frontend" is not started.)
+services:
+  mysql:
+    logging:
+      driver: awslogs
+      options:
+        awslogs-region: ${AWS_REGION:-ap-south-1}
+        awslogs-group: /cloudpulse/mysql
+        awslogs-create-group: "true"
+
+  backend:
+    logging:
+      driver: awslogs
+      options:
+        awslogs-region: ${AWS_REGION:-ap-south-1}
+        awslogs-group: /cloudpulse/backend
+        awslogs-create-group: "true"
+
+  caddy:
+    image: caddy:2
+    restart: unless-stopped
+    depends_on:
+      - backend
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      API_DOMAIN: ${API_DOMAIN:?set API_DOMAIN in .env}
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+
+volumes:
+  caddy_data:

@@ -1,0 +1,4 @@
+# Local development without Docker: run with  --spring.profiles.active=dev
+cloudpulse:
+  ssrf:
+    allow-private-targets: true   # lets you monitor a local mock service. NEVER enable in production.

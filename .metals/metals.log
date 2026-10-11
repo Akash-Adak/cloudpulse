@@ -1,0 +1,134 @@
+2026.10.11 08:26:42 INFO  Started: Metals version 1.6.9 in folders 'D:\cloudpulse\cloudpulse' for client Visual Studio Code 1.140.0.
+2026.10.11 08:26:42 INFO  time: initialize in 0.39s
+2026.10.11 08:26:42 INFO  Memory monitor started
+2026.10.11 08:26:44 WARN  Using H2 2.5.250 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2026.10.11 08:26:44 INFO  no build target found for D:\cloudpulse\cloudpulse\backend\src\main\java\com\cloudpulse\CloudPulseApplication.java. Using fallback presentation compiler.
+2026.10.11 08:26:46 INFO  no build target found for D:\cloudpulse\cloudpulse\backend\src\main\java\com\cloudpulse\CloudPulseApplication.java. Using fallback presentation compiler.
+2026.10.11 08:26:51 WARN  no build target for: D:\cloudpulse\cloudpulse\backend\src\main\java\com\cloudpulse\CloudPulseApplication.java
+2026.10.11 08:26:51 INFO  no build target found for D:\cloudpulse\cloudpulse\backend\src\main\java\com\cloudpulse\CloudPulseApplication.java. Using fallback presentation compiler.
+2026.10.11 08:26:53 INFO  time: code lens generation in 2.07s
+2026.10.11 08:27:33 INFO  no build target found for D:\cloudpulse\cloudpulse\backend\src\main\java\com\cloudpulse\CloudPulseApplication.java. Using fallback presentation compiler.
+2026.10.11 08:27:33 INFO  no build target found for D:\cloudpulse\cloudpulse\backend\src\main\java\com\cloudpulse\CloudPulseApplication.java. Using fallback presentation compiler.
+2026.10.11 08:27:34 INFO  no build target found for D:\cloudpulse\cloudpulse\backend\src\main\java\com\cloudpulse\CloudPulseApplication.java. Using fallback presentation compiler.
+2026.10.11 09:19:21 WARN  no build target for: D:\cloudpulse\cloudpulse\backend\src\main\java\com\cloudpulse\service\CheckRunner.java
+2026.10.11 09:19:21 WARN  no build target for: D:\cloudpulse\cloudpulse\backend\src\main\java\com\cloudpulse\service\DashboardService.java
+2026.10.11 09:19:21 WARN  no build target for: D:\cloudpulse\cloudpulse\backend\src\main\java\com\cloudpulse\service\MetricsCollector.java
+2026.10.11 09:22:20 INFO  no build target found for D:\cloudpulse\cloudpulse\backend\src\main\java\com\cloudpulse\service\MetricsCollector.java. Using fallback presentation compiler.
+2026.10.11 09:22:20 INFO  no build target found for D:\cloudpulse\cloudpulse\backend\src\main\java\com\cloudpulse\service\CheckRunner.java. Using fallback presentation compiler.
+2026.10.11 09:22:20 INFO  no build target found for D:\cloudpulse\cloudpulse\backend\src\main\java\com\cloudpulse\service\DashboardService.java. Using fallback presentation compiler.
+2026.10.11 09:22:25 INFO  no build target found for D:\cloudpulse\cloudpulse\backend\src\main\java\com\cloudpulse\CloudPulseApplication.java. Using fallback presentation compiler.
+Oct 11, 2026 9:22:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "vscode-agent-host://local/d%3A/cloudpulse/cloudpulse/backend/src/main/java/com/cloudpulse/repo/MetricSampleRepository.java?_ah%3DeyJzY2hlbWUiOiJzZXNzaW9uLWRiIiwicXVlcnkiOiJ7XCJzZXNzaW9uVXJpXCI6XCJjb3BpbG90Y2xpOi9jZTNlNWNlMC1lMjEyLTQ4MjAtODM5Yy1iM2JjMDdhNjg5MmJcIixcInRvb2xDYWxsSWRcIjpcImN1c3RvbV9jYWxsX3BybFZ4ZEU0QmFJbnVVcDRzNDhJQlE2ZFwiLFwiZmlsZVBhdGhcIjpcImQ6XFxcXGNsb3VkcHVsc2VcXFxcY2xvdWRwdWxzZVxcXFxiYWNrZW5kXFxcXHNyY1xcXFxtYWluXFxcXGphdmFcXFxcY29tXFxcXGNsb3VkcHVsc2VcXFxccmVwb1xcXFxNZXRyaWNTYW1wbGVSZXBvc2l0b3J5LmphdmFcIixcInBhcnRcIjpcImFmdGVyXCJ9IiwiY29udGVudFJlZiI6dHJ1ZX0"
+  ]
+}
+java.nio.file.FileSystemNotFoundException: Provider "vscode-agent-host" not installed
+	at java.base/java.nio.file.Path.of(Path.java:213)
+	at java.base/java.nio.file.Paths.get(Paths.java:98)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:149)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:221)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:787)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:784)
+	at scala.meta.internal.metals.WorkspaceLspService.didFocus(WorkspaceLspService.scala:810)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:42)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:225)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:192)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:189)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:97)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+Oct 11, 2026 9:22:42 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "vscode-agent-host://local/d%3A/cloudpulse/cloudpulse/backend/src/main/java/com/cloudpulse/repo/MetricSampleRepository.java?_ah%3DeyJzY2hlbWUiOiJzZXNzaW9uLWRiIiwicXVlcnkiOiJ7XCJzZXNzaW9uVXJpXCI6XCJjb3BpbG90Y2xpOi9jZTNlNWNlMC1lMjEyLTQ4MjAtODM5Yy1iM2JjMDdhNjg5MmJcIixcInRvb2xDYWxsSWRcIjpcImN1c3RvbV9jYWxsX3BybFZ4ZEU0QmFJbnVVcDRzNDhJQlE2ZFwiLFwiZmlsZVBhdGhcIjpcImQ6XFxcXGNsb3VkcHVsc2VcXFxcY2xvdWRwdWxzZVxcXFxiYWNrZW5kXFxcXHNyY1xcXFxtYWluXFxcXGphdmFcXFxcY29tXFxcXGNsb3VkcHVsc2VcXFxccmVwb1xcXFxNZXRyaWNTYW1wbGVSZXBvc2l0b3J5LmphdmFcIixcInBhcnRcIjpcImFmdGVyXCJ9IiwiY29udGVudFJlZiI6dHJ1ZX0"
+  ]
+}
+java.nio.file.FileSystemNotFoundException: Provider "vscode-agent-host" not installed
+	at java.base/java.nio.file.Path.of(Path.java:213)
+	at java.base/java.nio.file.Paths.get(Paths.java:98)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:149)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:221)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:787)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:784)
+	at scala.meta.internal.metals.WorkspaceLspService.didFocus(WorkspaceLspService.scala:810)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:42)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:225)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:192)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:189)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:97)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+Oct 11, 2026 9:22:51 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "vscode-agent-host://local/d%3A/cloudpulse/cloudpulse/backend/src/main/java/com/cloudpulse/service/MetricsCollector.java?_ah%3DeyJzY2hlbWUiOiJzZXNzaW9uLWRiIiwicXVlcnkiOiJ7XCJzZXNzaW9uVXJpXCI6XCJjb3BpbG90Y2xpOi9jZTNlNWNlMC1lMjEyLTQ4MjAtODM5Yy1iM2JjMDdhNjg5MmJcIixcInRvb2xDYWxsSWRcIjpcImN1c3RvbV9jYWxsX0dzQ3d5QkdUU2UxMWNyVGQ2aVJhR1hGdVwiLFwiZmlsZVBhdGhcIjpcImQ6XFxcXGNsb3VkcHVsc2VcXFxcY2xvdWRwdWxzZVxcXFxiYWNrZW5kXFxcXHNyY1xcXFxtYWluXFxcXGphdmFcXFxcY29tXFxcXGNsb3VkcHVsc2VcXFxcc2VydmljZVxcXFxNZXRyaWNzQ29sbGVjdG9yLmphdmFcIixcInBhcnRcIjpcImFmdGVyXCJ9IiwiY29udGVudFJlZiI6dHJ1ZX0"
+  ]
+}
+java.nio.file.FileSystemNotFoundException: Provider "vscode-agent-host" not installed
+	at java.base/java.nio.file.Path.of(Path.java:213)
+	at java.base/java.nio.file.Paths.get(Paths.java:98)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:149)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:221)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:787)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:784)
+	at scala.meta.internal.metals.WorkspaceLspService.didFocus(WorkspaceLspService.scala:810)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:42)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:225)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:192)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:189)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:97)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+2026.10.11 09:24:44 INFO  Shutting down server
+2026.10.11 09:24:44 INFO  Memory monitor stopped
+2026.10.11 09:24:44 INFO  shutting down Metals
+2026.10.11 09:24:44 INFO  Exiting server
+2026.10.11 17:34:07 INFO  Started: Metals version 1.6.9 in folders 'D:\cloudpulse\cloudpulse' for client Visual Studio Code 1.141.0.
+2026.10.11 17:34:07 INFO  Memory monitor started
+2026.10.11 17:34:09 WARN  Using H2 2.5.250 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2026.10.11 17:34:09 INFO  no build target found for D:\cloudpulse\cloudpulse\backend\src\main\java\com\cloudpulse\CloudPulseApplication.java. Using fallback presentation compiler.
+2026.10.11 17:34:10 INFO  no build target found for D:\cloudpulse\cloudpulse\backend\src\main\java\com\cloudpulse\CloudPulseApplication.java. Using fallback presentation compiler.
+2026.10.11 17:37:01 INFO  no build target found for D:\cloudpulse\cloudpulse\backend\src\main\java\com\cloudpulse\CloudPulseApplication.java. Using fallback presentation compiler.
+2026.10.11 17:46:05 INFO  no build target found for D:\cloudpulse\cloudpulse\backend\src\main\java\com\cloudpulse\service\MetricsCollector.java. Using fallback presentation compiler.
+2026.10.11 18:35:29 INFO  no build target found for D:\cloudpulse\cloudpulse\backend\src\main\java\com\cloudpulse\CloudPulseApplication.java. Using fallback presentation compiler.
+2026.10.11 18:35:29 INFO  no build target found for D:\cloudpulse\cloudpulse\backend\src\main\java\com\cloudpulse\CloudPulseApplication.java. Using fallback presentation compiler.
+Oct 11, 2026 6:35:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10
+2026.10.11 18:35:29 INFO  no build target found for D:\cloudpulse\cloudpulse\backend\src\main\java\com\cloudpulse\CloudPulseApplication.java. Using fallback presentation compiler.
+Oct 11, 2026 6:35:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 14
+2026.10.11 18:35:29 INFO  no build target found for D:\cloudpulse\cloudpulse\backend\src\main\java\com\cloudpulse\CloudPulseApplication.java. Using fallback presentation compiler.

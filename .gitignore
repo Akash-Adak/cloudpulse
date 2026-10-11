@@ -1,0 +1,25 @@
+# secrets
+.env
+*.pem
+*.key
+
+# backend
+backend/target/
+*.iml
+.idea/
+.vscode/
+
+# frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+
+# python
+__pycache__/
+*.pyc
+.venv/
+
+# OS
+.DS_Store
+.env

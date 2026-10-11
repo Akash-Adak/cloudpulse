@@ -1,0 +1,67 @@
+server:
+  port: ${SERVER_PORT:8080}
+  shutdown: ${SERVER_SHUTDOWN:graceful}
+  error:
+    include-message: never
+    include-stacktrace: never
+
+spring:
+  application:
+    name: cloudpulse
+  # Load the root .env for direct local runs; Docker Compose still supplies environment variables.
+  config:
+    import: optional:file:.env[.properties],optional:file:../.env[.properties]
+  datasource:
+    url: ${DB_URL:jdbc:mysql://${DB_HOST:localhost}:${DB_PORT:3306}/${DB_NAME:cloudpulse}?serverTimezone=UTC&allowPublicKeyRetrieval=true}
+    username: ${DB_USER:cloudpulse}
+    password: ${DB_PASSWORD}
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: none          # schema is owned by Flyway migrations
+    properties:
+      hibernate.jdbc.time_zone: UTC
+  flyway:
+    enabled: true
+  jackson:
+    default-property-inclusion: always
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: never
+
+cloudpulse:
+  admin:
+    username: ${CLOUDPULSE_ADMIN_USERNAME:admin}
+    password: ${CLOUDPULSE_ADMIN_PASSWORD}
+  jwt:
+    secret: ${CLOUDPULSE_JWT_SECRET}
+    ttl-minutes: ${CLOUDPULSE_JWT_TTL_MINUTES:480}
+  cors:
+    allowed-origins: ${CLOUDPULSE_CORS_ALLOWED_ORIGINS:http://localhost:5173}
+  ssrf:
+    allow-private-targets: ${CLOUDPULSE_ALLOW_PRIVATE_TARGETS:false}
+  probe:
+    max-redirects: ${CLOUDPULSE_PROBE_MAX_REDIRECTS:3}
+  scheduler:
+    enabled: ${CLOUDPULSE_SCHEDULER_ENABLED:true}
+    tick-ms: ${CLOUDPULSE_SCHEDULER_TICK_MS:5000}
+    initial-delay-ms: ${CLOUDPULSE_SCHEDULER_INITIAL_DELAY_MS:5000}
+  recovery-threshold: ${CLOUDPULSE_RECOVERY_THRESHOLD:1}
+  retention:
+    days: ${CLOUDPULSE_RETENTION_DAYS:30}
+    cron: "${CLOUDPULSE_RETENTION_CRON:0 30 3 * * *}"
+  alerts:
+    enabled: ${CLOUDPULSE_ALERTS_ENABLED:false}
+    recipients: ${CLOUDPULSE_ALERT_RECIPIENTS:}
+    from: ${CLOUDPULSE_ALERT_FROM:cloudpulse@localhost}
+
+logging:
+  level:
+    root: INFO
+    com.cloudpulse: INFO

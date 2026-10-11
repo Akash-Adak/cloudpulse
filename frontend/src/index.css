@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply bg-ground text-ink font-sans antialiased;
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-signal;
+  }
+  dialog::backdrop {
+    background: rgba(20, 32, 43, 0.45);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded px-3 py-1.5 text-sm font-medium transition-colors disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .btn-primary {
+    @apply btn bg-ink text-white hover:bg-signal;
+  }
+  .btn-quiet {
+    @apply btn border border-rule bg-panel text-ink hover:border-ink;
+  }
+  .btn-danger {
+    @apply btn border border-down text-down hover:bg-down hover:text-white;
+  }
+  .field {
+    @apply w-full rounded border border-rule bg-panel px-3 py-2 text-sm text-ink placeholder:text-muted;
+  }
+}
