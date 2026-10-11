@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-    branches: [main]
+    branches: [master]
   pull_request:
 
 permissions:
@@ -23,7 +23,7 @@ jobs:
           java-version: "21"
           cache: maven
       - name: Build and test
-        run: mvn -B verify
+        run: mvn clean install
 
   frontend:
     name: Frontend (React, Vite)
